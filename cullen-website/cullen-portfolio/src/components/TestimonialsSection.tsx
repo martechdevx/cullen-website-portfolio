@@ -84,7 +84,7 @@ export default function TestimonialsSection() {
       </div>
 
       <p className="text-center font-light mt-8" style={{ color: '#D7E2EA', opacity: 0.3, fontSize: '0.75rem' }}>
-        Testimonials shown are representative examples used for portfolio design and layout purposes.
+        Testimonials shown are real reviews from clients, amongst others.
       </p>
 
       {/* CTA */}

@@ -1,10 +1,10 @@
 const LINKS = ['Home', 'About', 'Services', 'Testimonials', 'FAQ', 'Contact']
 
 const SOCIALS = [
-  { label: 'Telegram', href: 'https://t.me/ecomcullen', icon: '✈' },
-  { label: 'X', href: 'https://x.com/ecomcullen', icon: '✕' },
-  { label: 'Email', href: 'mailto:cullenbenedict01@gmail.com', icon: '✉' },
-  { label: 'Discord', href: 'https://discord.com/users/1168067747255689286', icon: '◈' },
+  { label: 'Telegram', href: 'https://t.me/ecomcullen', icon: <i className="fa-brands fa-telegram"></i> },
+  { label: 'X', href: 'https://x.com/ecomcullen', icon: <i className="fa-brands fa-x-twitter"></i> },
+  { label: 'Email', href: 'mailto:cullenbenedict01@gmail.com', icon: <i className="fa-regular fa-envelope"></i> },
+  { label: 'Discord', href: 'https://discord.com/users/1168067747255689286', icon: <i className="fa-brands fa-discord"></i> },
 ]
 
 export default function Footer() {

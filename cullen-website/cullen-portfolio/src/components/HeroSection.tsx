@@ -2,8 +2,16 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import ContactButton from './ContactButton'
 import myPhoto from '../Assets/cullen.png'
+import myLogo from '../Assets/Bc-logo.png'
 
-const NAV = ['About', 'Services', 'Process', 'Testimonials', 'FAQ', 'Contact']
+const NAV = [
+  { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
+  { label: 'Process', href: '#process' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Work With Me', href: '#work-with-me' },
+]
 
 const fade = (delay: number, y = 0, x = 0) => ({
   initial: { opacity: 0, y, x },
@@ -55,22 +63,19 @@ export default function HeroSection() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-10 py-4 bg-[#0C0C0C]/80 backdrop-blur-sm z-50 shadow-md"
       >
-        <a
-        href="#home"
-        className="text-lg md:text-2xl font-bold text-[#D7E2EA] hover:opacity-70"
-        >
-        Benedict Cullen
-      </a>
+        <a href="#home" className="hover:opacity-70 transition-opacity duration-200">
+          <img src={myLogo} alt="Cullen Benedict" className="h-12 md:h-12 w-auto" />
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-6">
           {NAV.map(link => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}  
+              href={link.href}
               className="text-sm md:text-lg font-medium uppercase tracking-wider hover:opacity-70 text-[#D7E2EA]"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
@@ -89,12 +94,12 @@ export default function HeroSection() {
         <div className="fixed top-16 left-0 w-full bg-[#0C0C0C] flex flex-col items-center gap-4 py-6 md:hidden z-[9999]">
           {NAV.map(link => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}  
+              href={link.href}
               className="text-lg uppercase tracking-wider text-[#D7E2EA] hover:opacity-70"
               onClick={() => setMenuOpen(false)}
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
@@ -107,7 +112,7 @@ export default function HeroSection() {
           className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center"
           style={{ fontSize: 'clamp(3rem, 16vw, 200px)' }}
         >
-          Ecom Cullen
+         Ecom Cullen
         </motion.h1>
 
         <motion.p
