@@ -3,7 +3,7 @@ import ContactButton from './ContactButton'
 import AnimatedText from './AnimatedText'
 
 const ABOUT_TEXT =
-  'With a focused background in eCommerce and Shopify, I help online businesses create better customer experiences and stronger-performing stores. My work combines store design, conversion thinking, user experience improvements, and practical growth strategies. Rather than chasing trends or shortcuts, I focus on creating systems and store experiences that are easier for customers to navigate, understand, and trust. The goal is always the same: make it easier for visitors to become customers.'
+  "Benedict Cullen is an Ecom Mentor/Founder, dedicated , to helping brands build high-performing digital ecosystems. His work sits at the intersection of aesthetic design, technical development, and data-driven marketing. For years, he has helped businesses bridge the gap between their vision and their bottom line. Whether it is architecting a seamless website, optimizing user experience (UI/UX), or deploying technical solutions that automate operations, his focus remains singular: creating digital environments that convert. His approach isn't just about making things look good, it is about making them work harder for you. He combine a technical foundation in development with a deep understanding of customer behavior to ensure that every touchpoint a user has with your brand is intentional, efficient, and profitable."
 
 export default function AboutSection() {
   return (
@@ -65,7 +65,7 @@ export default function AboutSection() {
             className="hero-heading font-black uppercase leading-none tracking-tight text-center"
             style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
           >
-            About Me
+            About BC
           </h2>
         </FadeIn>
 
