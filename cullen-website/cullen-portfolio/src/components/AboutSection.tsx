@@ -77,7 +77,13 @@ export default function AboutSection() {
         <AnimatedText
           text={ABOUT_TEXT}
           className="font-medium text-center leading-relaxed"
-          style={{ color: '#D7E2EA', fontSize: 'clamp(1rem, 2vw, 1.35rem)', maxWidth: 560 }}
+          style={{ color: '#D7E2EA', 
+            fontSize: 'clamp(1rem, 2vw, 1.35rem)',
+            maxWidth: 700,
+            whiteSpace: 'normal',
+            wordBreak: 'keep-all',
+            overflowWrap: 'normal'
+            }}
         />
 
         {/* ── Stats bar ── */}
